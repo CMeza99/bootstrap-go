@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  bootstrap-go:
+    build: .
+    command: [ 'bash' ]
+    volumes:
+      - type: bind
+        source: ./
+        target: /root/bootstrap-go
+        read_only: false
